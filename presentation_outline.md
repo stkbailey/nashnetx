@@ -1,5 +1,7 @@
 ## Identifying PyNash's Popular Pythonistas with NetworkX
 
+Network analysis is a powerful and increasingly widespread way to analyze relational data, such as social networks. In this tutorial, audience members will learn how to use NetworkX, a popular open-source Python package, to perform network analysis. The learning will be embedded within we will walk through an analysis of data from MeetUp.com to determine which groups in each major Tennessee city are most likely to . 
+
 ### Questions for Bill
 - What is the best way to present code?
 	* Running Jupyter Notebooks vs. using PowerPoint?
@@ -65,3 +67,6 @@
 		- Big reve
 		al: who are the most "central" people in PyNash?
 7. Credits and point to source code
+
+
+## Personal
