@@ -6,11 +6,12 @@ import json
 import matplotlib.pyplot as plt
 from time import sleep
 
+# Need to load an api-key
 api_key = '646928682c4b5d6f5f6c782a6b351b29'
 
 
-def get_all_groups(location_str, radius=25, write_path=None):
-    '''Gets a list of all groups within a set radius from a location.'''
+def get_all_groups(location_str, radius=25, write_path=None, api_key=api_key):
+    '''Gets a list of all groups within a set radius from a location. Returns a dataframe.'''
     cols = ('group_id', 'group_name', 'num_members', 'category_id', 
             'category_name', 'organizer_id', 'group_urlname')
     all_groups = pd.DataFrame(columns=cols)
@@ -51,7 +52,7 @@ def get_group_members(group_id, api_key):
     # Keep querying until there are no more results
     all_results = False
     while all_results == False:
-        q = 'https://api.meetup.com/2/members?
+        q = 'https://api.meetup.com/2/members?'
         q += '&sign=true&group_id={}&only=name,id,city,state,hometown,joined,visited,lat,lon&page=200&offset={}'.format(group_id, page)
         q += '&key={}'.format(api_key)
         response = requests.get(q).json()
@@ -103,7 +104,7 @@ def agg_group_members(list_of_group_ids, api_key, write_path=None, intermediate_
     return all_members
 
 
-def get_events(urlname, api_key, date_filter_str=None):
+def get_events(urlname, date_filter_str=None, api_key=api_key):
     ''' Takes a Meetup group urlname and returns a DataFrame of events. Optionally, filter by date.'''
     
     q = 'https://api.meetup.com/{}/events?'.format(urlname)
@@ -125,7 +126,7 @@ def get_events(urlname, api_key, date_filter_str=None):
     return events_df
     
     
-def get_event_rsvps(urlname, event_id, api_key):
+def get_event_rsvps(urlname, event_id, api_key=api_key):
     '''Accepts a group urlname and event id, and returns a dataframe of RSVPs.'''
     q = 'https://api.meetup.com/{}/events/{}/rsvps?'.format(urlname, event_id)
     q += '&sign=true&photo-host=public&response=yes&only=member'
