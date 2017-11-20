@@ -1,13 +1,16 @@
 # nashnetx
 Network analysis is a powerful and increasingly widespread way to analyze relational data, such as social networks. In this tutorial, we will learn the basics of graph theory and how to use NetworkX, a popular open-source Python package. We'll then apply this knowledge to extract insights about the social fabric of Tennessee MeetUp groups. Blog posts based off this work are (will be) available on [stkbailey.github.io](https://stkbailey.github.io/).
 
+
 #### Repository Contents
-1. **PopularPythonistas_v1.pptx**: PowerPoint presentation shown at PyNash on 11/16/17.
-2. **1_Graph_Tutorial.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
-3. **2_PyNash_MeetUps.ipynb**: Analysis of the PyNash MeetUp group and a ranking of it's most popular members.
-4. **3_Nashville_Meetups.ipyn**: Analysis of the whole Nashville network.
-5. **utils.py**: Functions for accessing and downloading data via MeetUp's REST API.
-6. **data/**: Folder containing data downloaded from Meetup.
+1. **0_Motivation-Approach.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
+2. **1_Getting-MeetUp-Data.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
+3. **1_Graph_Tutorial.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
+4. **2_PyNash_MeetUps.ipynb**: Analysis of the PyNash MeetUp group and a ranking of it's most popular members.
+5. **3_Nashville_Meetups.ipyn**: Analysis of the whole Nashville network.
+6. **utils.py**: Functions for accessing and downloading data via MeetUp's REST API.
+7. **data/**: Folder containing data downloaded from Meetup.
+8. **presentations/**: PowerPoint presentation shown at PyNash on 11/16/17.
 
 
 #### Learning goals
