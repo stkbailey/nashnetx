@@ -3,14 +3,14 @@ Network analysis is a powerful and increasingly widespread way to analyze relati
 
 
 #### Repository Contents
-1. **0_Motivation-Approach.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
-2. **1_Getting-MeetUp-Data.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
-3. **1_Graph_Tutorial.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
-4. **2_PyNash_MeetUps.ipynb**: Analysis of the PyNash MeetUp group and a ranking of it's most popular members.
-5. **3_Nashville_Meetups.ipyn**: Analysis of the whole Nashville network.
-6. **utils.py**: Functions for accessing and downloading data via MeetUp's REST API.
+1. **1_Motivation-Approach.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
+2. **2_Getting-MeetUp-Data.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
+3. **3_Basic-NetworkX.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
+4. **4_PyNash-Relationships.ipynb**: Analysis of the PyNash MeetUp group and a ranking of it's most popular members.
+5. **5_Nashville-Relationshisp.ipynb**: Analysis of the whole Nashville network, including the group structure.
+6. **utils.py**: Miscellaneous functions, primarily for interfacing with MeetUp's REST API.
 7. **data/**: Folder containing data downloaded from Meetup.
-8. **presentations/**: PowerPoint presentation shown at PyNash on 11/16/17.
+8. **presentations/**: PowerPoint presentations presented with this material.
 
 
 #### Learning goals
