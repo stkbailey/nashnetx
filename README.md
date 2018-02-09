@@ -1,6 +1,7 @@
 # nashnetx
 Network analysis is a powerful and increasingly widespread way to analyze relational data, such as social networks. In this tutorial, we will learn the basics of graph theory and how to use NetworkX, a popular open-source Python package. We'll then apply this knowledge to extract insights about the social fabric of Tennessee MeetUp groups. Blog posts based off this work are (will be) available on [stkbailey.github.io](https://stkbailey.github.io/).
 
+Forkable and editable kernels are now also available on [Kaggle](https://www.kaggle.com/stkbailey/nashville-meetup).
 
 #### Repository Contents
 1. **1_Motivation-Approach.ipynb**: Introduction to NetworkX, building and plotting basic graphs.
